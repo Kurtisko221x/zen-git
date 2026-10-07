@@ -1,0 +1,30 @@
+{
+  "name": "zen-git",
+  "version": "0.1.0",
+  "description": "Git, but make it aesthetic. Gradients, spinners, ASCII art and good vibes after every commit.",
+  "type": "module",
+  "bin": {
+    "zen": "dist/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["git", "cli", "terminal", "aesthetic", "gradient", "vibe-coding"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "chalk": "^6.0.1",
+    "gradient-string": "^3.0.0",
+    "ora": "^9.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^5"
+  }
+}
